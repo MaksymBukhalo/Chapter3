@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 3176835338
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2a85b12539c396469edef33be3c1e75e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e747be4a1859c027292211dc6d942737
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/Image/Basketball.gif
+- Assets/Resources/Music/guard.mp3
+Dependencies: []
