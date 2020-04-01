@@ -8,6 +8,5 @@ public class ScriptableColorSetings : ScriptableObject
 {
     public string appName = "New name";
     public string appVersion = "0.0.0";
-    public List <Player> listOfPlayerColors;
-    
+    public List <Player> listOfPlayerColors;  
 }

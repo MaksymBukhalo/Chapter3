@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Players", menuName = "Player")]
+
 public class Player : ScriptableColorSetings
 {
     public string namePlayer;
@@ -12,7 +13,6 @@ public class Player : ScriptableColorSetings
     {
         this.namePlayer = namePlayer;
         this.colorPlayer = colorPlayer;
-
     }
 
 }

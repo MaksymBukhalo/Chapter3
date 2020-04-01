@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class UsePlayerColor : MonoBehaviour
 {
-    public ScriptableColorSetings colorSetings;
-    public int numberPlayer;
-
+    public Player playerSetings;
+    
     void Update()
     {
-        GetComponent<Renderer>().material.color = colorSetings.listOfPlayerColors[numberPlayer-1].colorPlayer;
+        gameObject.name = playerSetings.name;
+        gameObject.GetComponent<Renderer>().material.color = playerSetings.colorPlayer;
     }
 }

@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LoadAssetBundles : MonoBehaviour
-{
-    
+{   
     public string bundleName;
+    public AudioSource music;
+
     public void Start()
     {
         StartCoroutine(Go());
     }
+
     IEnumerator Go()
     {
-        using (WWW send = WWW.LoadFromCacheOrDownload("file://C:/Users/Maksim Bukhalo/Asset Bundles/Assets/AssetBundles/content/" + bundleName, 0))
+        using (WWW send = WWW.LoadFromCacheOrDownload(@"AssetBundles/content/" + bundleName, 0))
         {
 
             yield return send;
@@ -34,7 +36,8 @@ public class LoadAssetBundles : MonoBehaviour
             yield return imageRecuest;
             Debug.Log("Image");
 
-
+            music.clip = musicRecuest.asset as AudioClip;
+            music.Play();
         }
         
     }

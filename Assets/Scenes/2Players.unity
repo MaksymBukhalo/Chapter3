@@ -153,8 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c649d7dd2cda94da4a59f397257d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorSetings: {fileID: 11400000, guid: 228e0765dce914744b0236328882e199, type: 2}
-  numberPlayer: 1
+  playerSetings: {fileID: 11400000, guid: 25a5bb733b44b0d4dae63da8f153ddeb, type: 2}
 --- !u!65 &149834877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -261,8 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c649d7dd2cda94da4a59f397257d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorSetings: {fileID: 11400000, guid: 228e0765dce914744b0236328882e199, type: 2}
-  numberPlayer: 2
+  playerSetings: {fileID: 11400000, guid: 2b023281cd5829a4c92dd4f0709fbd8f, type: 2}
 --- !u!65 &597302497
 BoxCollider:
   m_ObjectHideFlags: 0

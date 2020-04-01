@@ -30,6 +30,7 @@ public class ControllerCubes : MonoBehaviour
             cubes.Add(handle.Result);
         };
     }
+
     private void DestroyCube()
     {
         if (cubes.Count<=0)
@@ -41,7 +42,6 @@ public class ControllerCubes : MonoBehaviour
         Addressables.ReleaseInstance(lastCube);
         cubes.Remove(lastCube);
     }
-
 
     private void DestroyAllCube()
     {
