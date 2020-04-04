@@ -7,11 +7,13 @@ public class LoadAssetBundles : MonoBehaviour
     public string bundleName;
     public AudioSource music;
 
+    [System.Obsolete]
     public void Start()
     {
         StartCoroutine(Go());
     }
 
+    [System.Obsolete]
     IEnumerator Go()
     {
         using (WWW send = WWW.LoadFromCacheOrDownload(@"AssetBundles/content/" + bundleName, 0))
@@ -39,7 +41,6 @@ public class LoadAssetBundles : MonoBehaviour
             music.clip = musicRecuest.asset as AudioClip;
             music.Play();
         }
-        
     }
 
 }
